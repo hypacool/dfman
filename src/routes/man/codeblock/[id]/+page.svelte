@@ -10,7 +10,7 @@
 
 <h2>Actions</h2>
 {#each actions as action}
-<a href="/man/codeblock/{codeblock.identifier}/{action.name}">
+<a href="/man/codeblock/{codeblock.identifier}/{encodeURIComponent(action.name)}">
     <div>
         {action.icon.name} | {action.name} (aka. {action.aliases})
         {#if action.tags.length}
