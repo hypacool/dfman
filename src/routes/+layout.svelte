@@ -1,10 +1,11 @@
 <script>
+	import { patch } from '$lib/actiondump';
 	import '../app.postcss';
 </script>
 
-<main class="prose">
-	<div class="flex">
-		<h1 class="flex-grow">DF Manual</h1>
+<div class="prose flex flex-col h-full w-full justify-start max-w-none">
+	<div class="flex w-full">
+		<h5 class="flex-grow pb-0 ml-4">DF Manual <small class="text-xs">Patch {patch}</small></h5>
 		<a href="/">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -21,6 +22,8 @@
 			</svg>
 		</a>
 	</div>
-	<hr />
-	<slot />
-</main>
+	<hr class="mt-0 w-full" />
+    <main class="ml-4">
+        <slot />
+    </main>
+</div>
