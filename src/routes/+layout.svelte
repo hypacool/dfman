@@ -22,8 +22,8 @@
 			</svg>
 		</a>
 	</div>
-	<hr class="mt-0 w-full" />
-    <main class="ml-4">
+	<hr class="mt-0 mb-2 w-full" />
+    <main class="ml-4 overflow-y-scroll">
         <slot />
     </main>
 </div>
